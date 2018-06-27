@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Autonomous Cars</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>Autonomous Cars</h1>
+                    <h4>Markus Reichl • 16.01.2017</h4>
+                </section>
+                
+				<section>
+                    <q><p>An autonomous car is a vehicle that is capable of sensing its environment and navigating without human input.</p>
+                    <small><i>- https://en.wikipedia.org/wiki/Autonomous_car</i></small></q>
+				</section>
+				
+				<section>
+                    <section>
+                        <h3>History</h3>
+                        <p><b>1920 </b>Early experiments</p>
+                        <p><b>1980 </b>First autonomous cars</p>
+                        <p><b>2013 </b>4 US-states legalized self-driving cars</p>
+                    </section>
+                    
+                    <section>
+                        <img src="imgs/firebird.jpg">
+                    </section>
+                    
+                    <section>
+                        <img src="imgs/salzburg.jpg">
+                    </section>
+				</section>
+				
+				<section>
+                    <h3>Classification</h3>
+                    <ul>
+                        <li><b>Level 0</b> No vehicle control, but may issue warnings.
+                        <li><b>Level 1</b> Vehicle assists the driver.
+                        <li><b>Level 2</b> System controls accelerating and breaking.
+                        <li><b>Level 3</b> Self-driving within known environments.
+                        <li><b>Level 4</b> System controls the vehicle in most environments.
+                        <li><b>Level 5</b> Other than setting the destination and starting the system, no human intervention is required.
+				</section>
+				
+				<section>
+                    <section>
+                        <img src="imgs/imagine.jpg">
+                    </section>
+                    
+                    <section>
+                        <iframe class="stretch" src="https://www.youtube.com/embed/fbWeKhAPMig" frameborder="0" allowfullscreen></iframe>
+                    </section>
+				</section>
+				
+				<section>
+                    <section>
+                        <h2>Risks</h2>
+                        <ul>
+                            <li>Cars can be hacked
+                            <li>Loss of driving-related jobs
+                            <li>Moral Issues
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h2>Obstacles</h2>
+                        <ul>
+                            <li>Software reliability
+                            <li>Autonomous cars rely on maps
+                            <li>Inter-Car-Communication required
+                    </section>
+                    
+                    <section>
+                        <h2>Opportunities</h2>
+                        <ul>
+                            <li>Reduction in traffic collisions
+                            <li>Driver is not required
+                            <li>Higher speed limits possible
+                            <li>Higher fuel efficiency
+                        </ul>
+                    </section>
+				</section>
+				
+				<section>
+                    <h2>Moral Issues</h2>
+				</section>
+				
+				<section>
+                    <h3>References</h3>
+                    <ul>
+                        <li>https://en.wikipedia.org/wiki/Autonomous_car
+                        <li>https://en.wikipedia.org/wiki/History_of_autonomous_cars
+                        <li>https://waymo.com
+                    </ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
